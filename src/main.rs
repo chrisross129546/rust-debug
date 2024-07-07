@@ -1,3 +1,5 @@
 fn main() {
-    println!("Hello, world!");
+    let mut test: i8 = 5;
+    println!("test = {}", test);
+
 }
