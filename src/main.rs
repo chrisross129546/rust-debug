@@ -1,10 +1,12 @@
+
+
 fn main() {
     // get_memory_efficient_string();
     // vector__()
     // compare();
-    get_continued_loop();
+    // get_continued_loop();
+    xd();
 }
-
 
 fn get_primitive_iterable_example() {
     let vector_example: Vec<&str> = vec!["nexus", "bagels", "is", "gay"];
@@ -50,13 +52,11 @@ fn vector__() {
     // every time you push something into a vector it doubles the capacity in memory from the previous size
     println!("{}", vec.capacity())
 }
-
 fn compare() -> bool {
     let a: &str = "Hello world";
     let c: &str = "Hello world";
     return a == c;
 }
-
 fn get_continued_loop() {
     let mut count: u8 = 0;
     'label: loop {
@@ -68,4 +68,12 @@ fn get_continued_loop() {
     }
 
     println!("{}", count);
+}
+
+fn arrow_function() {
+    let x = |arr: [u8; 3]| -> [u8; 3] {
+        return arr.map(|number: u8| number + 4);
+    };
+
+    print!("{:?}", x([1, 2, 3]));
 }
