@@ -5,7 +5,7 @@ fn main() {
     // vector__()
     // compare();
     // get_continued_loop();
-    xd();
+    arrow_function();
 }
 
 fn get_primitive_iterable_example() {
